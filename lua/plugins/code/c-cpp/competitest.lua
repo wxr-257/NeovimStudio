@@ -4,10 +4,10 @@ return {
 		"MunifTanjim/nui.nvim",
 	},
 	keys = {
-		{ "<leader>ka", ":CompetiTest add_testcase<CR>", desc = "Add a testcase" },
-		{ "<leader>ke", ":CompetiTest edit_testcase<CR>", desc = "Edit a testcase" },
-		{ "<leader>kd", ":CompetiTest delete_testcase<CR>", desc = "Delete a testcase" },
-		{ "<leader>kr", ":CompetiTest run<CR>", desc = "Test with testcase" },
+		{ "<leader>ccka", ":CompetiTest add_testcase<CR>", desc = "Add a testcase" },
+		{ "<leader>ccke", ":CompetiTest edit_testcase<CR>", desc = "Edit a testcase" },
+		{ "<leader>cckd", ":CompetiTest delete_testcase<CR>", desc = "Delete a testcase" },
+		{ "<leader>cckr", ":CompetiTest run<CR>", desc = "Test with testcase" },
 	},
 	opts = {
 		compile_directory = ".",
