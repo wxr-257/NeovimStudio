@@ -8,6 +8,8 @@ return {
 		options = {
 			numbers = "ordinal",
 			diagnostics = "nvim_lsp",
+			close_command = "Bdelete %d",
+			right_mouse_command = "Bdelete! %d",
 			diagnostics_indicator = function(_, _, diagnostics_dict, _)
 				local indicator = " "
 				for level, number in pairs(diagnostics_dict) do
@@ -28,7 +30,6 @@ return {
 	keys = {
 		{ "<leader>bl", "<cmd>BufferLineCyclePrev<CR>", desc = "BufferLine cycle prev" },
 		{ "<leader>br", "<cmd>BufferLineCycleNext<CR>", desc = "BufferLine cycle next" },
-		{ "<leader>bd", "<cmd>bdelete<CR>", desc = "BufferLine delete buffer" },
 		{ "<leader>bco", "<cmd>BufferLineCloseOthers<CR>", desc = "BufferLine close others" },
 		{ "<leader>bcl", "<cmd>BufferLineCloseLeft<CR>", desc = "BufferLine close left" },
 		{ "<leader>bcr", "<cmd>BufferLineCloseRight<CR>", desc = "BufferLine close right" },
