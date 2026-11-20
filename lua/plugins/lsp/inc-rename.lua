@@ -1,6 +1,5 @@
 return {
 	"smjonas/inc-rename.nvim",
-	event = "LspAttach",
 	keys = {
 		{
 			"<leader>lp",
