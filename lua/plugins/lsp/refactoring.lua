@@ -3,7 +3,6 @@ return {
 	event = { "BufReadPre", "BufNewFile" },
 	dependencies = {
 		"nvim-lua/plenary.nvim",
-		"lewis6991/async.nvim",
 	},
 	keys = {
 		{
