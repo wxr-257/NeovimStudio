@@ -9,6 +9,7 @@ return {
 		"nvim-telescope/telescope.nvim",
 		"zbirenbaum/copilot.lua",
 	},
+	cmd = { "CodeCompanion" },
 	keys = {
 		{ "<leader>ii", "<cmd>CodeCompanion<cr>", mode = { "n", "v" }, desc = "CodeCompanion Inline Prompt" },
 		{ "<leader>ic", "<cmd>CodeCompanionChat<cr>", desc = "CodeCompanion Open Chat Buffer" },
@@ -20,12 +21,13 @@ return {
 		require("codecompanion").setup({
 			opts = {
 				log_level = "INFO",
+				language = "Chinese",
 			},
-			strategies = {
-				chat = { adapter = { name = "deepseek", model = "deepseek-chat" } },
-				inline = { adapter = { name = "copilot" } },
-				agent = { adapter = { name = "deepseek", model = "deepseek-coder" } },
-				cmd = { adapter = { name = "deepseek", model = "deepseek-coder" } },
+			interactions = {
+				chat = "deepseek",
+				inline = "copilot",
+				agent = "deepseek",
+				cmd = "deepseek",
 			},
 			extensions = {
 				mcphub = {

@@ -6,6 +6,7 @@ return {
 		"antoinemadec/FixCursorHold.nvim",
 		"orjangj/neotest-ctest",
 		"alfaix/neotest-gtest",
+		"nvim-neotest/neotest-python",
 	},
 	keys = {
 		{
@@ -77,6 +78,7 @@ return {
 			adapters = {
 				require("neotest-ctest").setup({}),
 				require("neotest-gtest").setup({}),
+				require("neotest-python").setup({}),
 			},
 		})
 	end,
