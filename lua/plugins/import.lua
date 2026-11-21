@@ -10,7 +10,7 @@ return {
 	{ import = "plugins.git" },
 	{ import = "plugins.lint" },
 	{ import = "plugins.lsp" },
-	{ import = "plugins.markdown" },
+	{ import = "plugins.note" },
 	{ import = "plugins.project" },
 	{ import = "plugins.session" },
 	{ import = "plugins.test" },
