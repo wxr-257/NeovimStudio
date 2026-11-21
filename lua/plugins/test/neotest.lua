@@ -7,6 +7,7 @@ return {
 		"orjangj/neotest-ctest",
 		"alfaix/neotest-gtest",
 		"nvim-neotest/neotest-python",
+		"rouge8/neotest-rust",
 	},
 	keys = {
 		{
@@ -79,6 +80,7 @@ return {
 				require("neotest-ctest").setup({}),
 				require("neotest-gtest").setup({}),
 				require("neotest-python").setup({}),
+				require("neotest-rust").setup({}),
 			},
 		})
 	end,
