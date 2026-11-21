@@ -4,5 +4,18 @@ return {
 	keys = {
 		{ "<leader>nz", "<cmd>ZenMode<cr>", desc = "Toggle zen mode" },
 	},
-	opts = {},
+	opts = {
+		window = {
+			width = 0.85,
+			backdrop = 0.95,
+		},
+		plugins = {
+			options = {
+				ruler = false,
+				showcmd = false,
+				laststatus = 0,
+				showtabline = 0,
+			},
+		},
+	},
 }
