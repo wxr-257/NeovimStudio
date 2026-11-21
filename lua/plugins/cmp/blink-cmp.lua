@@ -4,6 +4,7 @@ return {
 		"L3MON4D3/LuaSnip",
 		"saghen/blink.lib",
 		"folke/lazydev.nvim",
+		"kristijanhusak/vim-dadbod-completion",
 		"fang2hou/blink-copilot",
 		"mikavilpas/blink-ripgrep.nvim",
 		"moyiz/blink-emoji.nvim",
@@ -48,7 +49,11 @@ return {
 				preset = "super-tab",
 			},
 			sources = {
-				default = { "buffer", "lazydev", "lsp", "path", "snippets", "copilot", "ripgrep", "emoji" },
+				default = { "buffer", "lsp", "path", "snippets", "copilot", "ripgrep", "emoji" },
+				per_filetype = {
+					sql = { "buffer", "dadbod", "lsp", "path", "snippets", "copilot", "ripgrep" },
+					lua = { "buffer", "lazydev", "lsp", "path", "snippets", "copilot", "ripgrep", "emoji" },
+				},
 				providers = {
 					lazydev = {
 						name = "LazyDev",
@@ -85,6 +90,11 @@ return {
 								return { ":" }
 							end,
 						},
+					},
+					dadbod = {
+						name = "Dadbod",
+						module = "vim_dadbod_completion.blink",
+						score_offset = 15,
 					},
 				},
 			},

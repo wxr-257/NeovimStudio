@@ -3,6 +3,7 @@ return {
 	{ import = "plugins.cmp" },
 	{ import = "plugins.code" },
 	{ import = "plugins.core" },
+	{ import = "plugins.dadbod" },
 	{ import = "plugins.colorscheme" },
 	{ import = "plugins.dap" },
 	{ import = "plugins.edit" },
