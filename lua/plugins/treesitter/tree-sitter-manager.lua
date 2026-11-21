@@ -5,5 +5,6 @@ return {
 		auto_install = true,
 		highlight = true,
 		nerdfont = true,
+		ensure_installed = "all",
 	},
 }
