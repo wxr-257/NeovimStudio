@@ -1,6 +1,5 @@
 return {
 	"folke/flash.nvim",
-	opts = {},
 	keys = {
 		{
 			"<leader>js",
@@ -73,4 +72,5 @@ return {
 			desc = "Toggle Flash Search",
 		},
 	},
+	opts = {},
 }

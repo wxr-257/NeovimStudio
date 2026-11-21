@@ -14,10 +14,7 @@ return {
 		"jvgrootveld/telescope-zoxide",
 		"delphinus/md-render.nvim",
 		"nvim-telescope/telescope-frecency.nvim",
-		{
-			"nvim-telescope/telescope-fzf-native.nvim",
-			build = "cmake -S. -Bbuild -DCMAKE_BUILD_TYPE=Release && cmake --build build --config Release --target install",
-		},
+		"nvim-telescope/telescope-fzf-native.nvim",
 	},
 	cmd = "Telescope",
 	opts = {
