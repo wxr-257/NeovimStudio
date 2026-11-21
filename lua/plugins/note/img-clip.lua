@@ -1,8 +1,7 @@
 return {
 	"HakonHarnes/img-clip.nvim",
-	event = { "BufReadPost", "BufNewFile", "InsertEnter" },
 	keys = {
-		{ "<leader>fp", "<cmd>PasteImage<CR>", desc = "Paste image from clipboard" },
+		{ "<leader>mc", "<cmd>PasteImage<CR>", desc = "Paste image from clipboard" },
 	},
 	opts = {
 		default = {

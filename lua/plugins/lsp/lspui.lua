@@ -4,7 +4,6 @@ return {
 		"OXY2DEV/markview.nvim",
 	},
 	branch = "main",
-	event = { "BufReadPost", "BufNewFile", "InsertEnter" },
 	keys = {
 		{ "<leader>la", "<cmd>LspUI code_action<CR>", desc = "Code Action" },
 		{ "<leader>lr", "<cmd>LspUI rename<CR>", desc = "Rename" },

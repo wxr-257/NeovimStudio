@@ -1,6 +1,6 @@
 return {
 	"windwp/nvim-ts-autotag",
-	event = { "BufReadPost", "BufNewFile", "InsertEnter" },
+	event = "InsertEnter",
 	opts = {
 		opts = {
 			enable_close = true,

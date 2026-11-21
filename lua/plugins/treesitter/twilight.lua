@@ -1,6 +1,5 @@
 return {
 	"folke/twilight.nvim",
-	event = "VeryLazy",
 	keys = {
 		{ "<leader>nt", "<cmd>Twilight<CR>", desc = "Toggle twilight" },
 		{ "<leader>ne", "<cmd>TwilightEnable<CR>", desc = "Enable twilight" },
