@@ -12,8 +12,5 @@ return {
 				["vim.lsp.util.stylize_markdown"] = true,
 			},
 		},
-		notify = {
-			enabled = false,
-		},
 	},
 }
