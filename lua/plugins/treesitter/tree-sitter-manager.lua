@@ -7,4 +7,7 @@ return {
 		nerdfont = true,
 		ensure_installed = "all",
 	},
+	init = function()
+		vim.treesitter.language.register("json", "jsonc")
+	end,
 }

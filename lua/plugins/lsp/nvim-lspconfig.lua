@@ -1,5 +1,8 @@
 return {
 	"neovim/nvim-lspconfig",
+	dependencies = {
+		"folke/neoconf.nvim",
+	},
 	event = { "BufReadPre", "BufNewFile", "InsertEnter" },
 	init = function()
 		vim.diagnostic.config({
