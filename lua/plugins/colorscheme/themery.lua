@@ -1,6 +1,7 @@
 return {
 	"zaldih/themery.nvim",
 	lazy = false,
+	priority = 1000,
 	keys = {
 		{ "<leader>ns", "<cmd>Themery<CR>", desc = "Choose Colorscheme" },
 	},
