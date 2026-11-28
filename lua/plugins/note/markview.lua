@@ -4,6 +4,7 @@ return {
 		"nvim-tree/nvim-web-devicons",
 		"nvim-mini/mini.icons",
 	},
+	cmd = { "Markview" },
 	ft = { "markdown", "codecompanion" },
 	keys = {
 		{ "<leader>mv", "<cmd>Markview toggle<CR>", desc = "Toggle Markdown View" },

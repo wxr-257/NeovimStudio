@@ -3,8 +3,8 @@ return {
 	dependencies = {
 		"HiPhish/rainbow-delimiters.nvim",
 	},
-	event = { "BufReadPost", "BufNewFile", "InsertEnter" },
 	main = "ibl",
+	event = { "BufReadPost", "BufNewFile", "InsertEnter" },
 	opts = {
 		indent = {
 			highlight = {

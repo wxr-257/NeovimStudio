@@ -3,6 +3,7 @@ return {
 	dependencies = {
 		"selimacerbas/kitehost.nvim",
 	},
+	cmd = "MdKite",
 	keys = {
 		{ "<leader>mpo", "<cmd>MdKite start<cr>", desc = "Markdown preview start" },
 		{ "<leader>mps", "<cmd>MdKite stop<cr>", desc = "Markdown preview stop" },

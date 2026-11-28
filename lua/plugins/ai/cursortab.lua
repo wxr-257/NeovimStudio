@@ -10,7 +10,7 @@ return {
 		},
 		provider = {
 			type = "inline",
-			url = os.getenv("AI_PROVIDER_URL") or "http://localhost:8000",
+			url = os.getenv("AI_PROVIDER_URL"),
 		},
 		behavior = {
 			idle_completion_delay = 50,

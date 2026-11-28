@@ -4,6 +4,24 @@ return {
 		"nvim-tree/nvim-web-devicons",
 	},
 	lazy = false,
+	cmd = {
+		"BufferLineCyclePrev",
+		"BufferLineCycleNext",
+		"BufferLineCloseOthers",
+		"BufferLineCloseLeft",
+		"BufferLineCloseRight",
+		"BufferLinePick",
+		"BufferLinePickClose",
+	},
+	keys = {
+		{ "<leader>bl", "<cmd>BufferLineCyclePrev<CR>", desc = "BufferLine cycle prev" },
+		{ "<leader>br", "<cmd>BufferLineCycleNext<CR>", desc = "BufferLine cycle next" },
+		{ "<leader>bco", "<cmd>BufferLineCloseOthers<CR>", desc = "BufferLine close others" },
+		{ "<leader>bcl", "<cmd>BufferLineCloseLeft<CR>", desc = "BufferLine close left" },
+		{ "<leader>bcr", "<cmd>BufferLineCloseRight<CR>", desc = "BufferLine close right" },
+		{ "<leader>bp", "<cmd>BufferLinePick<CR>", desc = "BufferLine pick" },
+		{ "<leader>bcp", "<cmd>BufferLinePickClose<CR>", desc = "BufferLine pick close" },
+	},
 	opts = {
 		options = {
 			numbers = "ordinal",
@@ -26,14 +44,5 @@ return {
 				return indicator
 			end,
 		},
-	},
-	keys = {
-		{ "<leader>bl", "<cmd>BufferLineCyclePrev<CR>", desc = "BufferLine cycle prev" },
-		{ "<leader>br", "<cmd>BufferLineCycleNext<CR>", desc = "BufferLine cycle next" },
-		{ "<leader>bco", "<cmd>BufferLineCloseOthers<CR>", desc = "BufferLine close others" },
-		{ "<leader>bcl", "<cmd>BufferLineCloseLeft<CR>", desc = "BufferLine close left" },
-		{ "<leader>bcr", "<cmd>BufferLineCloseRight<CR>", desc = "BufferLine close right" },
-		{ "<leader>bp", "<cmd>BufferLinePick<CR>", desc = "BufferLine pick" },
-		{ "<leader>bcp", "<cmd>BufferLinePickClose<CR>", desc = "BufferLine pick close" },
 	},
 }

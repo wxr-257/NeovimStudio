@@ -1,5 +1,6 @@
 return {
 	"HakonHarnes/img-clip.nvim",
+	cmd = { "PasteImage" },
 	keys = {
 		{ "<leader>mc", "<cmd>PasteImage<CR>", desc = "Paste image from clipboard" },
 	},

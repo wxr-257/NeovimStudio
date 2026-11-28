@@ -2,18 +2,12 @@ return {
 	"zaldih/themery.nvim",
 	lazy = false,
 	priority = 1000,
+	cmd = { "Themery" },
 	keys = {
 		{ "<leader>ns", "<cmd>Themery<CR>", desc = "Choose Colorscheme" },
 	},
 	opts = {
-		themes = {
-			"tokyonight",
-			"catppuccin",
-			"kanagawa",
-			"everforest",
-			"gruvbox",
-			"vscode",
-		},
+		themes = vim.fn.getcompletion("", "color"),
 		livePreview = true,
 	},
 }

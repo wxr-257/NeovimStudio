@@ -1,5 +1,6 @@
 return {
 	"romus204/tree-sitter-manager.nvim",
+	cmd = "TSManager",
 	event = { "BufReadPre", "BufNewFile", "InsertEnter" },
 	opts = {
 		auto_install = true,

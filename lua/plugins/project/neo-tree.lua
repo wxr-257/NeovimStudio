@@ -9,6 +9,11 @@ return {
 		"DrKJeff16/project.nvim",
 	},
 	cmd = "Neotree",
+	keys = {
+		{ "<F2>", "<cmd>Neotree toggle<CR>", desc = "Toggle file explorer" },
+		{ "<leader>ft", "<cmd>Neotree toggle<CR>", desc = "Toggle file explorer" },
+		{ "<leader>ff", "<cmd>Neotree focus<CR>", desc = "Focus file explorer" },
+	},
 	opts = {
 		document_symbols = {
 			follow_cursor = true,
@@ -49,11 +54,6 @@ return {
 		sources = { "filesystem", "buffers", "git_status", "document_symbols" },
 		default_source = "filesystem",
 		auto_clean_after_session_restore = true,
-	},
-	keys = {
-		{ "<F2>", "<cmd>Neotree toggle<CR>", desc = "Toggle file explorer" },
-		{ "<leader>ft", "<cmd>Neotree toggle<CR>", desc = "Toggle file explorer" },
-		{ "<leader>ff", "<cmd>Neotree focus<CR>", desc = "Focus file explorer" },
 	},
 	config = function(_, opts)
 		require("neo-tree").setup(opts)

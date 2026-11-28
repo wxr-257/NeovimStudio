@@ -1,6 +1,6 @@
 return {
 	"y3owk1n/time-machine.nvim",
-	opts = {},
+	cmd = { "TimeMachineToggle", "TimeMachinePurgeCurrent", "TimeMachinePurgeAll", "TimeMachineLogShow" },
 	keys = {
 		{
 			"<leader>ut",
@@ -23,6 +23,7 @@ return {
 			desc = "[Time Machine] Show log",
 		},
 	},
+	opts = {},
 	init = function()
 		local data_path = vim.fn.stdpath("data")
 		local undo_dir = data_path .. "/undo"
